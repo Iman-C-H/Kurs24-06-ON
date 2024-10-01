@@ -1,0 +1,121 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+    color: #333;
+}
+
+
+
+/* Header */
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+header ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+header ul li a {
+    color: white;
+    text-decoration:underline;
+}
+header ul li a:hover {
+    text-decoration:none;
+}
+
+
+
+/* Section */
+section {
+    padding: 20px;
+    background-color: #ECF0F1;
+    text-align: center;
+    text-decoration: none;
+}
+section h2 {
+    color: #2C3E50;
+    margin-top: 0;
+    text-decoration: none;
+    padding: 20px;
+}
+section ul li {
+    display: block;
+    padding: 5px;
+
+}
+section p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+}
+section img {
+    max-width: 600px;
+
+}
+
+img:hover{
+    transform:scale(1.2);
+}
+
+
+
+/* Div */
+.div {
+    color:#2C3E50;
+
+}
+.div h3 {
+    padding-top: 30px;
+    text-align: center;
+    color: #2C3E50;
+    margin-top: 0;
+}
+.div p {
+    text-align: center;
+    color: #333;
+    margin-bottom: 0;
+}
+.div img {
+    transition: 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 900%; 
+    padding-bottom: 10px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color:#2C3E50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ECF0F1;
+    text-decoration:dotted;
+}
+
+footer a:hover {
+    color: whitesmoke;
+
+}
