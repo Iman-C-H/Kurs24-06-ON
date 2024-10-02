@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsla(0, 7%, 89%, 0.792);
+    color: #333;
+}
+/*HEADER!!!*/
+header {
+    background-color: #2d2f32;
+    color: rgb(241, 230, 12);
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+header ul li {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: left;
+    
+}
+header ul li a {
+    color: rgb(241, 230, 12);
+    font-size: 23px;
+    text-decoration:none;
+}
+header ul li a:hover {
+    text-decoration:none;
+}
+
+
+/*SECTION1*/
+
+section {
+    background-color: white;
+    padding:20px;
+    border-radius: 16px;
+    color:black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+/*FOOTER*/
+
+footer {
+    background-color:#2D2F32;  
+    color: rgb(241, 230, 12);
+    padding: 25px;
+    text-align: center;
+}
+    
+footer ul {
+    justify-content: center;
+    align-items:center;
+    list-style: none;
+    display:flex;   
+}
+    
+footer a:hover {
+    color: whitesmoke;
+    
+}
+
+form { 
+    text-align: left;
+    align-items:center;
+    color:#444544;
+    font-weight: bold;
+
+}
+form input {
+    width: 100%;
+    margin-right: none;
+}
+
+textarea {
+    width: 100%;
+    margin-right: none;
+
+}
+button {
+    background-color: rgb(11, 118, 189);
+    border-radius:12px;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 20px;
+    font-size: 16xp;
+
+}
