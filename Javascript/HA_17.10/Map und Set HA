@@ -1,0 +1,35 @@
+//1___________________________________________
+// 1. //2.
+let benutzerVerwaltung = new Map();
+
+benutzerVerwaltung.set('Patrick', { email: 'Patrick@example.com', rolle: 'Admin' });
+benutzerVerwaltung.set('Ahmet', { email: 'Ahmet@example.com', rolle: 'User' });
+benutzerVerwaltung.set('Jacob', { email: 'Jacob@example.com', rolle: 'Gast' });
+
+// 3. 
+function zeigeBenutzer() {
+    benutzerVerwaltung.forEach((details, benutzername) => {
+        console.log(`${benutzername}: ${details.email}, ${details.rolle}`);
+    });
+}
+zeigeBenutzer();
+
+
+//2___________________________________________
+//1.
+let besuchteSeite = new Set();
+
+besuchteSeite.add('Startseite');
+besuchteSeite.add('Profil');
+besuchteSeite.add('Einstellungen')
+//2.
+console.log(`Anzahl der Seiten: ${besuchteSeite.size}`);
+
+//4.
+function zeigeSeiten(){
+    besuchteSeite.forEach((seite) => {
+        console.log(`Besuchte Seite: ${seite}`);
+    });
+}
+
+zeigeSeiten();
