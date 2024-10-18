@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid blue;
+        transition: background-color 0.3s;
+      }
+
+      .boxen {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="gruss">Willkommen</h1>
+    <script>
+      document.getElementById("gruss").innerText = "Herzlich Willkommen!";
+    </script>
+
+    <button id="colorButton">Ändere Farbe</button>
+    <script>
+      function getRandomColor() {
+        const letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      document
+        .getElementById("colorButton")
+        .addEventListener("click", function () {
+          this.style.backgroundColor = getRandomColor();
+        });
+    </script>
+
+    <ul>
+      <li>Apfel</li>
+      <li>Banane</li>
+      <li>Orange</li>
+    </ul>
+    <script>
+      window.onload = function () {
+        let listItems = document.getElementsByTagName("li");
+        listItems[1].textContent = "Mango";
+      };
+    </script>
+
+    <div id="my-div"></div>
+    <script>
+      let div = document.getElementById("my-div");
+      let neuerAbsatz = document.createElement("p");
+      neuerAbsatz.textContent = "Hinzugefügter Absatz";
+      div.appendChild(neuerAbsatz);
+    </script>
+
+    <button id="mein-button">Klick hier</button>
+    <script>
+      let button = document.getElementById("mein-button");
+      button.addEventListener("click", function () {
+        let neuerAbsatz = document.createElement("p");
+        neuerAbsatz.textContent = "Button wurde geklickt!";
+        document.body.appendChild(neuerAbsatz);
+      });
+    </script>
+
+    <div class="box" id="meine-box"></div>
+    <script>
+      let box = document.getElementById("meine-box");
+
+      box.addEventListener("mouseover", function () {
+        box.style.backgroundColor = "red";
+      });
+
+      box.addEventListener("mouseout", function () {
+        box.style.backgroundColor = "green";
+      });
+    </script>
+
+    <input type="text" id="abc" value="Hallo" />
+    <button id="senden">Absenden</button>
+
+    <script>
+      let senden = document.getElementById("senden"); //Button
+
+      senden.addEventListener("click", function () {
+        // Auftrag an den Button
+
+        let textfeld = document.getElementById("abc").value; //textfeld .value ist verankert mit .text
+
+        let neuerAbsatz2 = document.createElement("p");
+
+        neuerAbsatz2.textContent = textfeld;
+
+        document.body.appendChild(neuerAbsatz2);
+      });
+    </script>
+
+    <div class="boxen"></div>
+    <div class="boxen"></div>
+    <div class="boxen"></div>
+
+    <script>
+      let boxen = document.getElementsByClassName("boxen");
+
+      for (let i = 0; i < boxen.length; i++) {
+        boxen[i].addEventListener("click", function (){
+            for (let j = 0; j < boxen.length; j++) {
+             boxen[j].style.backgroundColor = "blue";   
+            }  
+      });
+    }
+
+    </script>
+  </body>
+</html>
