@@ -6,6 +6,7 @@ function getCategory() {
 function checkCategory() {
     //Holt sich den Wert aus der Funktion getGrade()
    alter = getCategory();
+   console.log("Dein Alter ist: " + alter);
 
     if (alter <= 12) {
         console.log ("Kind");
@@ -18,5 +19,7 @@ function checkCategory() {
     } else {
         console.log("X");
     }
+
 }
+
 checkCategory();
