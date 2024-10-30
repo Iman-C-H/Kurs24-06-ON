@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/layout/navbar/Navbar";
 import Footer from "./components/layout/footer/Footer";
 import Div from "./components/layout/div/Div";
+import CustomTextField from "./components/layout/textfield/Textfield";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <div><Navbar /> </div>
       <div><Div></Div></div>
       <div><Footer/></div>
+      <div></div>
     </div>
     </>
   );
